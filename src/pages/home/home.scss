@@ -3,7 +3,13 @@
     display: flex;
     .homeContainer
     {
-
         flex: 6;
+
+        .widgets
+        {
+            display: flex;
+            padding: 15px;
+            gap: 20px;
+        }
     }
 }
