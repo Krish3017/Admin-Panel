@@ -1,5 +1,9 @@
-.hello
+.home
 {
-    background-color: purple;
-    color: black;
+    display: flex;
+    .homeContainer
+    {
+
+        flex: 6;
+    }
 }
