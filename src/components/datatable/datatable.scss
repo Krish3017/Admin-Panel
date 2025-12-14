@@ -1,5 +1,39 @@
 .datatable {
   padding: 20px;
+
+  .add
+  {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .newUser
+  {
+    font-size: 19px;
+    padding: 5px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: gray;
+    }
+  .addUser
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: rgba(0, 128, 0, 0.332);
+    color: green;
+    font-weight: 500;
+    .icon
+     {
+       font-size: 25px;
+       padding-bottom: 6px;
+       padding-left: 2px;
+     }
+  }
+  }
   .cellWithImg {
     display: flex;
     align-items: center;

@@ -41,7 +41,7 @@ export const userRows = [
     email: "rohit.mehta@gmail.com",
     age: 26,
   },
-    {
+  {
     id: 1,
     username: "Jon Snow",
     img: "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?w=400",
@@ -132,24 +132,24 @@ export const usersColumns = [
         </div>
       )
     }
-  },{
-  field: "email",
-  headerName: "Email",
-  width: 250,
+  }, {
+    field: "email",
+    headerName: "Email",
+    width: 250,
   },
   {
     field: "age",
     headerName: "Age",
-    width:250,
-},
-{
-  field: "status",
-  headerName: "Status",
-  renderCell: (params) => {
-    return (
-      <div className={`cellWithStatus ${params.row.status}`}>{params.row.status}</div>
-    )
+    width: 250,
+  },
+  {
+    field: "status",
+    headerName: "Status",
+    renderCell: (params) => {
+      return (
+        <div className={`cellWithStatus ${params.row.status}`}>{params.row.status}</div>
+      )
+    }
   }
-}
 ]
 
