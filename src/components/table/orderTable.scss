@@ -1,0 +1,21 @@
+.status {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  display: inline-block;
+
+  &.Approved {
+    color: rgb(22, 163, 74);
+    background-color: rgb(220, 252, 231);
+  }
+
+  &.Pending {
+    color: rgb(202, 138, 4);
+    background-color: rgb(254, 249, 195);
+  }
+
+  &.Rejected {
+    color: rgb(185, 28, 28);
+    background-color: rgb(254, 226, 226);
+  }
+}
