@@ -66,14 +66,14 @@ const OrderTable = () => {
       <Table sx={{ minWidth: 650 }} aria-label="orders table">
         <TableHead>
           <TableRow>
-            <TableCell>ID</TableCell>
-            <TableCell>Product</TableCell>
-            <TableCell>Profile</TableCell>
-            <TableCell>Customer</TableCell>
-            <TableCell>Date</TableCell>
-            <TableCell align="right">Amount (₹)</TableCell>
-            <TableCell>Payment</TableCell>
-            <TableCell>Status</TableCell>
+            <TableCell className='tableCell'>ID</TableCell>
+            <TableCell className='tableCell'>Product</TableCell>
+            <TableCell className='tableCell'>Profile</TableCell>
+            <TableCell className='tableCell'>Customer</TableCell>
+            <TableCell className='tableCell'>Date</TableCell>
+            <TableCell className='tableCell' align="right">Amount (₹)</TableCell>
+            <TableCell className='tableCell'>Payment</TableCell>
+            <TableCell className='tableCell'>Status</TableCell>
           </TableRow>
         </TableHead>
 
@@ -83,9 +83,9 @@ const OrderTable = () => {
               key={row.id}
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
-              <TableCell>{row.id}</TableCell>
-              <TableCell>{row.product}</TableCell>
-              <TableCell>
+              <TableCell className='tableCell'>{row.id}</TableCell>
+              <TableCell className='tableCell'>{row.product}</TableCell>
+              <TableCell className='tableCell'>
                 <img
                   src={row.img}
                   alt={row.product}
@@ -97,11 +97,11 @@ const OrderTable = () => {
                   }}
                 />
               </TableCell>
-              <TableCell>{row.customer}</TableCell>
-              <TableCell>{row.date}</TableCell>
-              <TableCell align="right">{row.amount}</TableCell>
-              <TableCell>{row.method}</TableCell>
-              <TableCell sx={{ fontWeight: 600 }}>
+              <TableCell className='tableCell'>{row.customer}</TableCell>
+              <TableCell className='tableCell'>{row.date}</TableCell>
+              <TableCell className='tableCell' align="right">{row.amount}</TableCell>
+              <TableCell className='tableCell'>{row.method}</TableCell>
+              <TableCell className='tableCell' sx={{ fontWeight: 600 }}>
                 <span className={`status ${row.status}`}>{row.status}</span>
               </TableCell>
             </TableRow>

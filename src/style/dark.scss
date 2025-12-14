@@ -1,0 +1,197 @@
+.app.dark {
+    background-color: #0b0b0b;
+    color: #9ca3af;
+    min-height: 100vh;
+
+    .chartGrid {
+        stroke: rgba(255, 255, 255, 0.08);
+    }
+
+    .OrderTable {
+        background-color: #0b0b0b;
+
+        .tableCell {
+            color: #9ca3af;
+        }
+    }
+
+    .navbar {
+        color: #e5e7eb;
+        border-color: #1f2937;
+        background-color: #0f0f0f;
+
+        .serach input {
+            color: #d1d5db;
+            background-color: transparent;
+
+            &::placeholder {
+                color: #6b7280;
+            }
+        }
+    }
+
+    /* Sidebar */
+    .sidebar {
+        border-color: #1f2937;
+        background-color: #0f0f0f;
+
+        .top {
+            .logo {
+                color: #e5e7eb;
+                font-weight: 600;
+                letter-spacing: 0.5px;
+            }
+        }
+
+        .hr {
+            border-color: #1f2937;
+        }
+
+        ul {
+            li {
+                color: #9ca3af;
+                border-radius: 6px;
+
+                &:hover {
+                    background-color: #1f2937;
+                    color: #e5e7eb;
+                }
+            }
+        }
+    }
+     .datatable {
+    overflow: hidden;
+  }
+
+  .MuiDataGrid-root {
+    height: 100%;
+  }
+   .MuiPaper-root {
+    background-color: #0b0b0b !important;
+    color: #e5e7eb;
+  }
+
+  /* Datagrid root */
+  .MuiDataGrid-root {
+    background-color: #0b0b0b;
+    color: #e5e7eb;
+    border: none;
+  }
+
+  /* Header */
+  .MuiDataGrid-columnHeaders {
+    background-color: #0f0f0f !important;
+    border-bottom: 1px solid #1f2937;
+  }
+
+  .MuiDataGrid-columnHeaderTitle {
+    color: #e5e7eb;
+    font-weight: 600;
+  }
+
+  /* Rows */
+  .MuiDataGrid-row {
+    background-color: #0b0b0b;
+    border-bottom: 1px solid #1f2937;
+
+    &:hover {
+      background-color: #141414;
+    }
+  }
+
+  /* Cells */
+  .MuiDataGrid-cell {
+    border-bottom: none;
+    color: #d1d5db;
+  }
+
+  /* Footer / Pagination */
+  .MuiDataGrid-footerContainer {
+    background-color: #0f0f0f;
+    border-top: 1px solid #1f2937;
+    color: #9ca3af;
+  }
+
+  .MuiTablePagination-root,
+  .MuiTablePagination-displayedRows {
+    color: #9ca3af;
+  }
+
+  /* Checkbox */
+  .MuiCheckbox-root svg {
+    color: #9ca3af;
+  }
+
+  /* Scrollbar filler + spacers (removes white blocks) */
+  .MuiDataGrid-filler,
+  .MuiDataGrid-scrollbarFiller {
+    background-color: #0f0f0f !important;
+  }
+
+  /* Internal scrollbar (if enabled) */
+  .MuiDataGrid-scrollbar--vertical,
+  .MuiDataGrid-scrollbarContent {
+    background-color: #0f0f0f !important;
+  }
+   .MuiDataGrid-root {
+    background-color: #0b0b0b !important;
+  }
+
+  .MuiDataGrid-columnHeaders,
+  .MuiDataGrid-columnHeadersInner,
+  .MuiDataGrid-columnHeader {
+    background-color: #0f0f0f !important;
+  }
+
+  .MuiDataGrid-columnHeaderTitle {
+    color: #e5e7eb !important;
+    font-weight: 600;
+  }
+
+  /* Remove white shadow / overlay */
+  .MuiDataGrid-columnHeaders::after {
+    background: none !important;
+  }
+
+  /* Checkbox in header */
+  .MuiDataGrid-columnHeaderCheckbox .MuiCheckbox-root svg {
+    color: #9ca3af;
+  }
+   .MuiDataGrid-scrollbar--vertical {
+    background-color: #0f0f0f !important;
+  }
+
+  .MuiDataGrid-scrollbarContent {
+    background-color: #0f0f0f !important;
+  }
+
+  /* Remove any white filler near scrollbar */
+  .MuiDataGrid-filler,
+  .MuiDataGrid-scrollbarFiller {
+    background-color: #0f0f0f !important;
+  }
+
+  /* ===== Browser scrollbar (page or container) ===== */
+
+  /* Firefox */
+  scrollbar-color: #374151 #0b0b0b;
+  scrollbar-width: thin;
+
+  /* Chrome / Edge / Safari */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0b0b0b;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #374151;
+    border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #4b5563;
+  }
+}

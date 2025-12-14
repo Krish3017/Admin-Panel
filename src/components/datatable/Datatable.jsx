@@ -24,19 +24,18 @@ const Datatable = () => {
 
     return (
         <div>
-            <Paper sx={{ height: 590, width: '100%' }} className='datatable'>               
-                    <div className='add'>
-                        <div className='newUser'>Add New User</div>
-                        <div className='addUser'><Link to="/users/new"><PersonAddAltIcon className='icon'/>Add</Link></div>
-                    </div>
-                
-                <DataGrid
+            <Paper sx={{ height: 590, width: '100%' }} className='datatable'>
+                <div className='add'>
+                    <div className='newUser'>Add New User</div>
+                    <div className='addUser'><Link to="/users/new"><PersonAddAltIcon className='icon' />Add</Link></div>
+                </div>
+
+                <DataGrid className='dataGrid'
                     rows={userRows}
                     columns={usersColumns.concat(actionColumn)}
-                    pageSize={9}
-                    rowsPerPageOptions={[9]}
+                    pageSize={7}
+                    pageSizeOptions={[7]}
                     checkboxSelection
-                    sx={{ border: 0 }}
                 />
 
             </Paper>
