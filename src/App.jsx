@@ -17,6 +17,8 @@ import {
 import { formInputs, productInputs } from './formSource'
 import { DarkModeContext } from './context/darkmodeContext'
 import { useContext } from 'react'
+import Systemhealth from './components/systemHealth/Systemhealth'
+import Logs from './components/logs/Logs'
 const App = () => {
 
 const {darkMode}=useContext(DarkModeContext)
@@ -26,6 +28,8 @@ const {darkMode}=useContext(DarkModeContext)
         <Routes>
           <Route path='/'>
             <Route index element={<Home />} />
+            <Route path='Systemhealth' element={<Systemhealth />} />
+            <Route path='Logs' element={<Logs />}/>
             <Route path='login' element={<Login />} />
             <Route path='users'>
               <Route index element={<List />} />

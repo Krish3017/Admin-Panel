@@ -29,10 +29,12 @@ const Sidebar = () => {
       <div className='center'>
         <ul>
           <p className='title'>MAIN</p>
+          <Link to="/"> 
           <li>
             <DashboardIcon className='icons'/>
             <span>Dashboard</span>
           </li>
+          </Link>
           <p className='title'>LISTS</p>
           <Link to="/users">
           <li>
@@ -63,24 +65,30 @@ const Sidebar = () => {
             <NotificationsNoneIcon className='icons'/>
             <span>Notifications</span>
           </li>
-           <p className='title'>SERVICES</p>
+          <p className='title'>SERVICES</p>
+          <Link to='/Systemhealth'>
           <li>
             <HealthAndSafetyIcon className='icons'/>
             <span>System health</span>
           </li>
+          </Link>
+          <Link to="/Logs">
           <li>
             <StorageIcon className='icons'/>
             <span>Logs</span>
           </li>
+          </Link>
           <li>
             <SettingsIcon className='icons'/>
             <span>Setting</span>
           </li>
-           <p className='title'>USER</p>
+          <p className='title'>USER</p>
+          <Link to="/users/single">
           <li>
             <AccountCircleIcon className='icons' />
             <span>Profile</span>
           </li>
+          </Link>
           <li>
             <LogoutIcon className='icons'/>
             <span>Log-out</span>

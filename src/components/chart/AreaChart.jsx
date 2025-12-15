@@ -1,40 +1,67 @@
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
+import {
+  AreaChart,
+  Area,
+  XAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+} from "recharts";
 
 // #region Sample data
 const data = [
-  { name: "January", Total: 1200 },
-  { name: "February", Total: 1800 },
-  { name: "March", Total: 1100 },
-  { name: "April", Total: 1600 },
-  { name: "May", Total: 400 },
-    { name: "June", Total: 2100 },
-   { name: "Jul", Total: 1900 },
-  { name: "Aug", Total: 1500 },
-  { name: "Sep", Total: 1900 },
-  { name: "Oct", Total: 2700 },
-  { name: "Nov", Total: 2500 },
-  { name: "Dec",Total: 3000 }
+   { month: "January", a: 45, b: 30 },
+  { month: "February", a: 90, b: 68 },
+  { month: "March", a: 35, b: 22 },
+  { month: "April", a: 65, b: 42 },
+  { month: "May", a: 40, b: 28 },
+  { month: "June", a: 98, b: 75 },
+  { month: "July", a: 50, b: 34 },
+  { month: "August", a: 85, b: 60 },
+  { month: "September", a: 55, b: 38 },
+  { month: "October", a: 90, b: 65 },
+  { month: "November", a: 62, b: 45 },
+  { month: "December", a: 95, b: 70 },
 ];
 
 // #endregion
-const StackedAreaChart = ({aspect}) => {
-    return (
-    <AreaChart
-      style={{ width: '100%', maxWidth: '700px', maxHeight: '70vh', aspectRatio: aspect}}
-      responsive
-      data={data}
-      margin={{
-        top: 20,
-        right: 0,
-        left: 0,
-        bottom: 0,
-      }}
-    >
-      <CartesianGrid strokeDasharray="3 3" className='chartGrid'/>
-      <XAxis dataKey="name" stroke='gray'/>
-            <Tooltip />
-      <Area type="monotone" dataKey="Total" stackId="1" stroke="#8884d8" fill="#8884d8" />
-    </AreaChart>
+const StackedAreaChart = ({ aspect }) => {
+  return (
+    <ResponsiveContainer width="100%" height={300}>
+      <AreaChart data={data} margin={{ top: 20, right: 20, left: 0, bottom: 0 }}>
+        <defs>
+          <linearGradient id="blueGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#7b7fdc" stopOpacity={0.9} />
+            <stop offset="100%" stopColor="#7b7fdc" stopOpacity={0.1} />
+          </linearGradient>
+          <linearGradient id="redGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#b65b7c" stopOpacity={0.8} />
+            <stop offset="100%" stopColor="#b65b7c" stopOpacity={0.1} />
+          </linearGradient>
+        </defs>
+
+        <CartesianGrid stroke="#555"
+          strokeDasharray="2 4"
+          strokeOpacity={0.18} />
+        <XAxis dataKey="month" tick={{ fill: "#999" }} axisLine={false} tickLine={false} />
+        <Tooltip />
+
+        <Area
+          type="monotone"
+          dataKey="a"
+          stroke="#7b7fdc"
+          fill="url(#blueGrad)"
+          strokeWidth={2}
+        />
+        <Area
+          type="monotone"
+          dataKey="b"
+          stroke="#b65b7c"
+          fill="url(#redGrad)"
+          strokeWidth={2}
+        />
+      </AreaChart>
+    </ResponsiveContainer>
+
   );
 };
 

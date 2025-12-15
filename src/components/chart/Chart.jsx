@@ -6,7 +6,7 @@ const Chart = () => {
 
   return (
     <div className='chart'>
-      <div className="title">Last 6 months revenue</div>
+      <div className="title">Last 6 Months revenue</div>
       <AreaChart aspect={2/1}/>
     </div>
   )
