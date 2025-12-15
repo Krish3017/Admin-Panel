@@ -17,33 +17,35 @@ A modern **Admin Panel Dashboard** built with React, focused on clean architectu
 - System Health and Logs pages
 - Clean, scalable folder structure
   
-## Folder Structure 
+## Folder Structure
+
+``` bash
 src/
 ├── components/
-│ ├── sidebar/ # Primary navigation and theme controls
-│ ├── navbar/ # Top navigation, actions, and indicators
-│ ├── widget/ # Reusable KPI widgets (users, orders, earnings)
-│ ├── chart/ # Data visualization components
-│ ├── featured/ # Highlighted analytics section
-│ ├── table/ # Tabular data (orders, listings)
-│ ├── systemHealth/ # System monitoring UI
-│ └── logs/ # Application logs viewer
+│ ├── sidebar/ 
+│ ├── navbar/ 
+│ ├── widget/ 
+│ ├── chart/ 
+│ ├── featured/ 
+│ ├── table/ 
+│ ├── systemHealth/ 
+│ └── logs/ 
 │
 ├── context/
-│ └── darkmodeContext.js # Global theme state (Dark / Light mode)
+│ └── darkmodeContext.js
 │
 ├── pages/
-│ ├── home/ # Dashboard layout and composition
-│ ├── login/ # Authentication UI
-│ ├── list/ # Users / Products listing pages
-│ ├── single/ # Detailed view for a single entity
-│ └── new/ # Create new user / product forms
+│ ├── home/ 
+│ ├── login/
+│ ├── list/ 
+│ ├── single/ 
+│ └── new/ 
 │
-├── formSource.js # Centralized form configuration
+├── formSource.js 
 ├── style/
-│ └── dark.scss # Global dark theme styles
-└── App.jsx # Root component and routing configuration
-
+│ └── dark.scss =
+└── App.jsx 
+```
 ## Key React Concepts Implemented
 
 - **Functional Components & Hooks**
