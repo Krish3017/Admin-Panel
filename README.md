@@ -63,6 +63,3 @@ I chose to build an **Admin Panel Dashboard** because it represents a real-world
 - I could demonstrate **routing, global state management, and layout systems** together in one project.
 - It helped me practice building **scalable and maintainable React structures**.
 - Features like dashboards, tables, logs, and system monitoring reflect **actual industry use cases**.
-- The project clearly showcases my understanding of **how frontend systems are designed**, not just how they look.
-
-This project was chosen to highlight my ability to think in terms of **structure, scalability, and real application workflows**, which are critical in professional frontend development.
