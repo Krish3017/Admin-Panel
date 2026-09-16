@@ -14,8 +14,6 @@ A modern **Admin Panel Dashboard** built with React, focused on clean architectu
 - Modular Sidebar & Navbar layout
 - Dashboard with widgets, charts, and tables
 - User & Product management routes
-- System Health and Logs pages
-- Clean, scalable folder structure
   
 ## Folder Structure
 
@@ -61,5 +59,3 @@ I chose to build an **Admin Panel Dashboard** because it represents a real-world
 - Admin dashboards are used in **most production applications**, making this project highly practical.
 - It allowed me to work on **application architecture**, not just components.
 - I could demonstrate **routing, global state management, and layout systems** together in one project.
-- It helped me practice building **scalable and maintainable React structures**.
-- Features like dashboards, tables, logs, and system monitoring reflect **actual industry use cases**.
